@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- 这里的意思是使用设备的宽度作为视图宽度并禁止初始的缩放。在<head>标签离加入meta标签 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* width = device-width宽度等于当前设备的宽度 */
+        /* initial-scale初始的缩放比例（默认设置为1.0） */
+        /* maximum-scale允许用户缩放到的最大比例（默认设置为1.0） */
+        /* user-scale用户是否可以手动缩放（默认设置为no） */
+        .box{
+            width:300px;
+            height:300px;
+            
+        }
+
+        @media screen and (max-width:768px){
+            .box{
+                background-color: aqua;
+            }
+            .p1{
+                display: none;
+            }
+            .p2{
+                display: none;
+            }
+        }
+
+        @media screen and (min-width:768px) and (max-width:996px){
+            .box{
+                background-color: chartreuse;
+            }
+            .p1{
+                display: none;
+            }
+            .p2{
+                display: block;
+            }
+        }
+
+        @media screen and (min-width:996px){
+            .box{
+                background-color: red;
+            }
+            .p1{
+                display: block;
+            }
+            .p2{
+                display: block;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="box"></div>
+    <p class="p1">哈哈哈</p>
+    <p class="p2">呵呵呵</p>
+
+
+
+</body>
+</html>

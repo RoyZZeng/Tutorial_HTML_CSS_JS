@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            float: right;
+            /* 脱离了文档流 */
+            /* 会让下面的图层和这个重叠 */
+
+        }
+
+        .container{
+            width: 400px;
+            height: 400px;
+            background-color: blueviolet;
+        }
+
+        img{
+            width: 300px;
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 浮动的定义 -->
+    <!-- float属性定义元素在那个方向浮动，任何元素都可以浮动 -->
+    <!-- left元素向左浮动   right元素向右浮动 -->
+    <!-- 浮动的原理 -->
+    <!-- 浮动以后使元素脱离了文档流 -->
+    <!-- 浮动只有左右浮动，没有上下浮动 -->
+
+    <!-- 元素向左浮动 -->
+    <!-- 脱离文档流之后，元素相当于在页面上面增加一个浮层来放置内容。此时可以理解为有两层页面，一层是底层和原页面，所以会出现折叠现象 -->
+
+    <div class="box"></div>
+    <div class="container"></div>
+
+    <div>
+        <img src="./1.jpg" alt="">
+        <img src="./1.jpg" alt="">
+
+    </div>
+</body>
+
+</html>

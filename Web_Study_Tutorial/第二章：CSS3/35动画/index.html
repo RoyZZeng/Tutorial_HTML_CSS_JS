@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 动画是使元素从一种样式逐渐变化成为另外一种样式的效果 -->
+    <!-- 您可以改变任意多的样式任意多的次数 -->
+    <!-- 请用百分比来规定变化发生的时间，或者用关键词“From” 和 “To”，等同于0%和100% -->
+    <!-- 0%是动画的开始，100%是动画的完成。 -->
+
+    <!-- name: 动画名称，开发人员自己命名 -->
+    <!-- percent：为百分比值，可以添加多个百分比值 -->
+    <style>
+
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            animation: myAnim 3s linear 0s infinite ;
+        }
+
+        div:hover{
+            animation-play-state: paused;
+            /* 鼠标移上去，动画暂停 */
+        }
+
+        @keyframes myAnim{
+            0%{
+                width:200px;
+                background-color: red;
+            }
+            25%{
+                width:300px;
+                background-color: blue;
+            }
+            50%{
+                width:400px;
+                background-color: green;
+            }
+            75%{
+                width:300px;
+                background-color: blue;
+            }
+            100%{
+                width:200px;
+                background-color: red;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- animation： name duration timing-function delay iteration-count direction -->
+    <!-- name 设置动画的名称 -->
+    <!-- duration 设置动画的持续时间 -->
+    <!-- time-function 设置动画效果的速率（如下） -->
+    <!-- delay 设置动画的开始时间（延时执行） -->
+    <!-- iteration-count 设置动画循环的次数，infinite为无限次数的循环 -->
+    <!-- direction 设置动画播放的方向（如下） -->
+    <!-- animation-play-state 控制动画的播放状态：running代表播放，而paused代表停止播放 -->
+
+    <!-- timing-function值 -->
+    <!-- ease 逐渐变慢（默认） -->
+    <!-- linear 匀速 -->
+    <!-- ease-in 加速 -->
+    <!-- ease-out 减速 -->
+    <!-- ease-in-out 先加速后减速 -->
+
+
+    <div></div>
+
+
+</body>
+
+</html>

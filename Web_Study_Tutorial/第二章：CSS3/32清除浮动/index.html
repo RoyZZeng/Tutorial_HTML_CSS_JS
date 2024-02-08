@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 500px;
+            /* height: 500px; */
+            background-color: #888;
+        }
+
+        .container::after{
+            content:"";
+            display: block;
+            clear: both;
+        }
+
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color:aqua;
+            margin: 5px;
+            float: left;
+            /* 问题1: 子元素的浮动会造成父元素的高度塌陷，因为父元素就没有东西撑开了*/
+        }
+
+        .text{
+            width: 100px;
+            height: 100px;
+            background-color: blueviolet;
+            clear: both;
+            /* clear属性就是清除浮动用的，both的用法就是无论时左还是右浮动，都清除掉 */
+        }
+    </style>
+</head>
+<body>
+    <!-- 当元素浮动float浮动后，该元素就会脱离文档流并向左/向右浮动 -->
+    <!-- 浮动元素会造成父元素高度塌陷 -->
+    <!-- 后续元素会受到影响 -->
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="text"></div>
+    </div>
+    
+</body>
+</html>

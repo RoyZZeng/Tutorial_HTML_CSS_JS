@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>标题</h3>
+    <a href="#">超链接</a>
+    <strong>文本</strong>
+    <p>段落</p>
+    <ul>
+        <li>列表</li>
+    </ul>
+    <table>
+        <tr>
+            <td>单元格</td>
+        </tr>
+    </table>
+
+    <!-- 为每一个区域的内容进行分支容器，单独的div是无法显示内容，但是可以更加清晰地显示里面含括的标签内容 -->
+    <div>
+        <ul>
+            <li>导航1</li>
+            <li>导航2</li>
+            <li>导航3</li>
+        </ul>
+    </div>
+    
+    <div>
+        <img src="" alt="">
+    </div>
+    
+    <div>
+        <img src="" alt="">
+        <p>这是一个段落</p>
+    </div>
+
+    <!-- 旧标签，可以自定义标签，但是容易不清晰和不规范 -->
+    <div id="header"> </div>
+    <div id="nav"> </div>
+    <div id="article"> 
+        <div id="section"> </div>
+    </div>
+    <div id="silder"> </div>
+    <div id="footer"> </div>
+
+    <!-- 新标签，更加规范，整洁，但是有兼容性问题，一些14年以前的老版本浏览器无法运行 -->
+    <header></header> 
+    <!-- 头部 -->
+    <nav></nav>
+    <!-- 导航 -->
+    <article>
+        <section></section>
+        <!-- 定义文档中的节，比如章节，页眉，页脚 -->
+    </article>
+    <!-- article代表一个独立的，完整的喜爱难关内容块，例如一篇完整的论坛帖子，一篇博客文章，一个用户 -->
+    <aside></aside>
+    <!-- 侧边栏 -->
+    <footer></footer>
+</body>
+
+</html>

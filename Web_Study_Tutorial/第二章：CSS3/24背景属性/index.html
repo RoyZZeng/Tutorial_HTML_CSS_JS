@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 400px;
+            height: 400px;
+            background-color:#ffff00;
+        }
+
+        .box2{
+            /* 头两个值是容器的体积 */
+            width: 400px;
+            height: 400px;
+            background-image:url("1.jpeg") ;
+            background-repeat: no-repeat;
+            /* repeat 默认值 repeat-x 只向水平方向平铺 repeat-y 只向垂直方向平铺 no-repeat 不平铺 */
+            
+            /* background-size: cover; */
+            /* length:设置图片背景图片的宽度和高度，第一个值宽度，第二个值高度，如果只是设置一个，第二个值auto */
+            /* percentage: 计算相对位置区域的百分比，第一个值宽度，第二个值高度，如果只是设置一个，第二个值auto */
+            /* cover：保持图片纵横比将图片压缩成完全覆盖背景区域的最小大小 */
+            /* 保持图片纵横比并将图像缩放成合适背景定位区域的最大大小 */
+
+            background-position: right top;
+            /* 截取原图片指定的某个位置，并且渲染 */
+            /* left top, left center, left bottom, right top, right center, right bottom, right top, center top, center center, ccenter botto, */
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1"></div>
+
+    <div class="box2"></div>
+</body>
+
+</html>

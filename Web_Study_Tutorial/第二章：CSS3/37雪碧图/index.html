@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    
+        .icon1{
+            /* display 在这里的作用就是把span的内联元素变成块级元素*/
+            display:block;
+            width: 45px;
+            height: 75px;
+            background-image: url(1.png);
+            border: 1px solid red;
+            background-position: -21px -12px;
+            /* background-position就是用来调整图片的位置，第一个数值负数代表往左移动，第二个数值负数代表往上移动 */
+        }
+
+        .icon2{
+            /* display 在这里的作用就是把span的内联元素变成块级元素*/
+            display:block;
+            width: 45px;
+            height: 75px;
+            background-image: url(1.png);
+            border: 1px solid red;
+            background-position: -309px -84px;
+            /* background-position就是用来调整图片的位置，第一个数值负数代表往左移动，第二个数值负数代表往上移动 */
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+    <!-- CSS Sprite也叫CSS精灵图，CSS雪碧图，是一种网页图片应用处理方式。它允许你将一个页面涉及到的所有零星图片都包含到一张大图中去 -->
+
+    <!-- 优点 -->
+    <!-- 减少图片的字节 -->
+    <!-- 减少网页http请求，从而大大的提高页面的性能 -->
+
+    <!-- 原理 -->
+    <!-- 通过background-image引入背景图片 -->
+    <!-- 通过background-position把背景图片移动到自己需要的位置 -->
+
+
+    <span class="icon1"></span>
+    <span class="icon2"></span>
+   
+
+</body>
+
+</html>
