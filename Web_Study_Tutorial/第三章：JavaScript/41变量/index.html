@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        var num = 10;
+
+        // 变量本质 （固定空间）= 停车位
+        // 变量名（通过名字操作空间）= 车位编号
+        // 数据 （变化的量）= 车
+
+        // num = 30;
+        // 变量的重新赋值
+        console.log(num);
+        
+        //变量提升
+        // JavaScript 引擎的工作方式是，先解析代码，获取所有被声明的变量，然后再一行行地运行。这造成的结果，就是所有的变量的声明语句，都会被提升到代码的头部，这就叫做变量提升（hoisting）。
+
+        // 这样写会导致undefined
+        console.log(age);
+        var age = 10;
+        // 这才是浏览器的执行正确格式，也就是变量提升
+        var age;
+        console.log(age);
+        age = 10;
+
+
+    </script>
+
+</body>
+
+</html>

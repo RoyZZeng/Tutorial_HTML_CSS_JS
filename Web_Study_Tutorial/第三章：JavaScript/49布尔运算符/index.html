@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        //取反运算符(!)
+
+        // 布尔值取反
+        // !true = false
+        // !false = true
+
+        var flag = true;
+        console.log(!flag); //false
+
+        // 对于非布尔值，取反运算符会将其转为布尔值。可以这样记忆，以下六个值取反后为true，其他值都为false。
+
+        //温馨提示
+        // undefined
+        // null
+        // false
+        // 0
+        // NaN
+        // 空字符传（“）
+
+        console.log(!null);
+        console.log(!undefined);
+        console.log(!0);
+        console.log(!NaN);
+        console.log(!false);
+        
+        console.log(!100);
+        console.log(!"iwen");
+        console.log(!{name: "iwen"});
+
+
+        // && 多个条件都要满足，任何一个条件不满足，都是false
+        console.log(100 > 10 && 100 > 20 && 100 >=30); //true
+
+
+        // ｜｜ 多个条件满足一个则为真，都不满足才是false
+
+        console.log(100 > 10 || 100 > 200); // false
+
+    </script>
+
+
+</body>
+</html>
