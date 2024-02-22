@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // break语句和continue语句都具有跳转作用，可以让那个代码不按既有的顺序执行
+
+        //需求：如果i的值=5，则不在继续执行下去
+        // for(var i = 0; i<100; i++ ){
+        //     if(i==5){
+        //         //跳出循环
+        //         break;
+        //     }
+        //     console.log(i);
+        // }
+
+        //continue语句用于立即终止本轮循环，返回循环结构头部，开始下一轮循环，也就是可以用于跳过一个数
+
+        for(var i = 0; i<100; i++ ){
+            if(i==5){
+                //跳出循环
+                continue;
+            }
+            console.log(i);
+        }
+
+        
+    </script>
+
+</body>
+</html>

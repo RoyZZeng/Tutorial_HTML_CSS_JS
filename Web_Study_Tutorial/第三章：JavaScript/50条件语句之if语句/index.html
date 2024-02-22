@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var flag = true;
+        if(flag){
+            // flag为true则执行大括号里面的语句
+            // flag为false则不执行大括号里面的语句
+            console.log("我是真的");
+        }
+
+
+        var num1 = 10;
+        var num2 = 20;
+        if(num1 < num2){ //表达式
+            console.log("num1小, num2大");
+        }
+
+        var x = 10;
+        var y = 20;
+        if(x === y){ // 尤其是赋值表达式不具有比较作用，所以if里面千万不要用“=”
+            console.log(x); // 20
+        }
+
+
+    </script>
+
+
+    <!-- if结构先判断表达式的布尔值，然后根据布尔值的真伪，执行不同的语句。所谓布尔值，值的是JavaScript的两个特殊值，true表示真，false表示伪。 -->
+
+
+</body>
+</html>

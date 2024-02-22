@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var flag = true;
+        if(flag){
+            console.log("我是孙悟空");
+        } else{
+            console.log("不，你是六耳猕猴");
+        }
+
+        // 0-6:一周的7天
+        // 判断一下今天周几
+        var day = 3; //周四
+        if(day === 0){
+            console.log("今天星期一");
+        } else if(day === 1) {
+            console.log("今天是星期二");
+        } else if(day === 2){
+            console.log("今天是星期三");
+        } else if(day === 3) {
+            console.log("今天是星期四");
+        } else if(day === 4){
+            console.log("今天是星期五");
+        } else if(day === 5){
+            console.log("今天是星期六");
+        } else{
+            console.log("今天是星期日");
+        }
+
+        var eat = true;
+        var food = "猪肉炖粉条";
+
+        //if... else的匹配规则： if总是找离他最近的一个else, 先找同级
+        if(eat){
+            if(food === "猪肉炖粉条"){
+                console.log("猪肉炖粉条");
+            }else{
+                console.log("拍黄瓜");
+            }
+        }else{
+            console.log("不吃饭");
+        }
+
+        
+
+    </script>
+
+    <!-- if...else基本结构 -->
+    <!-- if代码后面，还可以跟一个else代码块，表示不满足条件时，所要执行的代码。 -->
+
+    <!-- 多个if...else连接 -->
+    <!-- 对同一个变量进行多次判断时，多个if...else语句可以连写在一起。 -->
+
+
+
+</body>
+</html>
