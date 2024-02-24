@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        //join就是数组转换为字符串，并按照自己的方法进行分割
+        var arr = [10,20,30,40,null,undefined]; // null 和 undefined会转换为空字符串
+        console.log(arr.join()); //10,20,30,40
+        console.log(arr.join("|"));//10|20|30|40
+        console.log(arr.join(""));//10203040
+        
+
+        //数组的join配合字符串的split可以实现数组与字符串的互换
+        var arr1 = ["hello","world"];
+        // console.log(arr1.join(" ")); //helloworld
+        var result = arr1.join(" "); // hello world
+        console.log(result.split(" ")); // ["hello","world"]
+
+    </script>
+
+</body>
+</html>

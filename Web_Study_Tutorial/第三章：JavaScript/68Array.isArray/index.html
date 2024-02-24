@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+         var num = 10;
+         console.log(typeof num); //number
+
+         //直接用typeof无法判定一个数组
+         var arr = [10, 20, 30];
+         console.log(typeof arr); //数组的关键字：Array
+          //Array.isArray方法返回一个布尔值，表示参数是否为数组。它可以弥补typeof运算符的不足
+         console.log(Array.isArray(arr)); // true: 数组 
+         console.log(Array.isArray(num)); //false：不是数组
+         
+
+
+    </script>
+
+</body>
+</html>

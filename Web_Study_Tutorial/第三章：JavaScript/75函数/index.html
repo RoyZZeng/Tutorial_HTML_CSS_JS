@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        // // 先调用，在创建函数也可以
+        // add(); //当写出这个的时候，上面的函数才被调用
+        // add(); //可被重复调用
+        // add(); 
+        // add(); 
+        
+        //函数是一段可以反复调用的代码块，类似于一个模具。
+        function add(x,y){
+            // console.log(x + y);
+            return x + y 
+            //return下面这里都不能在加任何代码因为不会被执行
+        }
+
+        // // 先调用，在创建函数也可以
+        // add(10,20); //当写出这个的时候，上面的函数才被调用
+        // add(100,200); //可被重复调用
+        // add(5,6); 
+        // add(10,5); 
+
+        //函数返回值·
+        //Javascript函数提供两个接口实现与外界的交互，其中参数作为入口，接收外界信息；返回值作为出口，把运算结果反馈给外界
+        var result = add(10,20);
+        console.log(result);
+        
+
+    </script>
+
+</body>
+</html>

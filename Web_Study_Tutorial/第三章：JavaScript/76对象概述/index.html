@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        //对象（object）是Javascript语言的核心概念，也是最重要的数据类型。简单说，就是一组“键值对”（key-valye）的集合，是一种无序的复合数据集合。
+        
+        //创建一个对象user,
+        //这里的对象是没有类型限制的
+        var user = {
+            name: "itbaizhan",
+            age: 13,
+            jobs:["itbaizhan","sxt"],
+            flag:true,
+            getName: function(){
+                console.log("iwen");
+            },
+            container:{
+                frontEnd:"Web前端",
+                backEnd:["python","java"]
+            }
+        }
+
+        //对象的读取方式：对象名.属性
+        console.log(user.name);
+        console.log(user.jobs); // ["itbaizhan","sxt"]
+
+        for(var i = 0; i<user.jobs.length;i++){
+            console.log(user.jobs[i]);
+        }
+
+        user.getName();
+
+        //链式调用
+        console.log(user.container.frontEnd)
+        console.log(user.container.backEnd)
+    </script>
+
+</body>
+</html>
