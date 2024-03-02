@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        // Date是一个时间戳：从格林威治时间1970年1月1号零时零分零秒（北京时间1970年1月1号8时0分0秒起至现在的总秒数
+
+        // Unix是20世纪70年代初出现的一个操作系统。Unix认为1970年1月1号是时间纪元。Javascript也就遵循了这一约束。
+        console.log(Date.now());
+
+        // date对象提供一系列get的方法，用来获取实例对象某个方面的值
+        // 1709364102262
+        console.log( new Date(1709364102262));
+        console.log( new Date());
+
+        // 2030-1-1 19:28:30
+        console.log(new Date(1709364102262).getDate());
+        console.log(new Date(1709364102262).getDay());
+        console.log(new Date(1709364102262).getFullYear());
+        // 注意获取月份的时候是从 0开始算到11来代表1-12月，所以要在function里面+1
+        console.log(new Date(1709364102262).getMonth() + 1);
+
+        // 2030-1-1 19:28:30
+        var year = new Date(1709364102262).getFullYear();
+        var month = new Date(1709364102262).getMonth() + 1;
+        var day = new Date(1709364102262).getDate();
+
+        console.log(year + "-" + month + "-" + day);
+
+        //编写一个函数用来表示本年度剩余的天数
+        // 阳历
+        function leftDays(){
+            var today = new Date();
+            var endYear = new Date(today.getFullYear(), 11,31,23,59,59,999);
+            var msPerDay = 24 * 60 * 60 * 1000;
+            var result = (endYear.getTime() - today.getTime()) / msPerDay
+            console.log(Math.floor(result));
+        }
+        leftDays();
+    </script>
+
+</body>
+</html>

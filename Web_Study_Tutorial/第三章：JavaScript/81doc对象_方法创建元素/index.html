@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="nav">导航</div>
+    <div id="container"> </div>
+    
+    <script>
+
+        var text = document.createElement("p");
+        var content = document.createTextNode("我是文本")
+        var id = document.createAttribute("id")
+        id.value = "root"
+        // appendChild：将内容或者自元素放到容器中
+        text.appendChild(content);
+        text.setAttributeNode(id);//只有属性Attribute可以通过这种方法进行塞入，其他只能用appendChild
+        console.log(text);
+
+        var body = document.getElementById("container");
+        container.appendChild(text);
+
+
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        var num = -100;
+        console.log(num);
+        // abs 把一个负数变成正数绝对值
+        console.log(Math.abs(num)); // -100变成100
+
+        // Max用于取一堆数据里的最大值
+        console.log(Math.max(10,30,20,56,34)); //56
+         // Min用于取一堆数据里的最小值
+        console.log(Math.min(10,30,20,56,34)); //10
+
+        // floor抹掉小数点，向下取整
+        var num1 = 10.3;
+        console.log(Math.floor(num1));
+        // ceil抹掉小数点，向上取整
+        console.log(Math.ceil(num1));
+
+        //每次刷新页面，random都会得到一个大于等于0但是小于1的小数值
+        console.log(Math.random());
+
+        // 10  20 任意范围内的随机生成函数
+        function getRandomArbitrary(min,max){
+            //最大值-最小值 乘以随机数 = 0 ～ 最小值之间的随机数 + 最小值 = 10 ～ 20之间的随机数
+            var result = Math.random() * (max-min) + min
+            result = Math.floor(result)
+            console.log(result);
+        }
+
+        getRandomArbitrary(10,20);
+
+
+    </script>
+
+</body>
+</html>
