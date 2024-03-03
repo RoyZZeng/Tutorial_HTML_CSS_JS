@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+        }
+
+        .box1{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box" id="root">Hello</div>
+
+    
+    <script>
+
+        // Element对象_属性：id，className，classList，innerHTML，innerText
+        var root = document.getElementById("root");
+        // console.log(root.id);
+        root.id = "roots"
+
+        // console.log(root.className); //box
+        root.className = "box box1"; // 原本的box也要保留，因为box1的值是在box的基础上进行叠加的
+
+        // Element.classList 对象有下列方法
+        // add()增加一个class
+        // remove()移除一个class
+        // contains()检查当前元素是否包含某个class
+        //toggle将某个class移入或移出当前元素
+
+        console.log(root.classList.add("mybox"));
+        root.classList.remove("box");
+
+        if(root.classList.contains("box1")){
+            console.log("有");
+        }else{
+            console.log("没有")
+        }
+
+
+        //Element.innerHTML 属性返回一个字符串，等同于该元素包含的所有HTML代码。该属性可读写，常用来设置某个节点的内容。它能改写所有元素节点的内容，包括HTML和body元素。
+        console.log(root.innerHTML = "大家好呀");//读取
+        console.log(root.innerText = "哇哈哈哈哈");
+
+        // innerHTML 和innerText的区别：
+        // innerHTML可以识别标签
+        // innerText会把标签识别成一个字符串
+
+        var str = "<a href='https://www.itbaizhan.com'>百战</a>"
+        root.innerHTML = str
+
+        
+
+    </script>
+
+</body>
+</html>
