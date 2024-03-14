@@ -1,0 +1,16 @@
+Nodejs安装
+Node.js官网
+https://nodejs.org/en/
+
+大量的库
+在安装Node.js的同时，会附带一个npm命令，npm是Node的包管理工具，这样正是接下来我们要用到的npm的简单结构，有助于Node.js生态系统的激增，现在npm仓库托管了超过1，000，000个可以自由使用的开源包
+
+npm镜像
+由于服务器在国外，所以下载速度比较慢，我们可以用国内的镜像
+
+阿里镜像地址
+https://npmmirror.com/
+
+npm install -g cnpm --registry=https://registry.npmmirror.com
+
+我的mac电脑要加 sudo在前面，然后输入开机密码才能安装
